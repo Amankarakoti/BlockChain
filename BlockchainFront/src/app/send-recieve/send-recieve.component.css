@@ -1,0 +1,10 @@
+body{
+    background-color: aqua;
+}
+p,button{
+    width:auto;
+    margin-top:5vh;
+    margin-left: 10vh;
+    margin-bottom: 2vh;
+    border:solid black 3px;
+}
