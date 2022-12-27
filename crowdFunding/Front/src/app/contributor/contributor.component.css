@@ -1,0 +1,8 @@
+#err{
+    margin-top:20px;
+    display: flex;
+    width:50%;
+}
+#err button{
+    margin-left: auto;
+}

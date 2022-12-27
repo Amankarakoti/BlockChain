@@ -1,0 +1,14 @@
+.butSpace{
+    margin-right: 2vw;
+}
+.buttons{
+    margin-top:30px;
+}
+#err{
+    margin-top:20px;
+    display: flex;
+    width:50%;
+}
+#err button{
+    margin-left: auto;
+}

@@ -1,0 +1,53 @@
+
+<h1>{{account}}</h1>
+
+<form (ngSubmit)="createCampaign(form.value)" #form="ngForm">
+    <div class="row mb-3">
+        <label for="inputTarget" class="col-sm-2 col-form-label">Target Fund</label>
+        <div class="col-sm-6">
+            <input ngModel type="text" class="form-control" id="inputTarget" name="target">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputFundDeadline" class="col-sm-2 col-form-label">Funding Deadline </label>
+        <div class="col-sm-6">
+            <input ngModel type="text" class="form-control" id="inputFundDeadline" name="fundDeadline">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputVoteDeadline" class="col-sm-2 col-form-label">Voting Deadline </label>
+        <div class="col-sm-6">
+            <input ngModel type="text" class="form-control" id="inputVoteDeadline" name="voteDeadline">
+        </div>
+    </div>
+    <div class="row mb-3">
+        <label for="inputReceipent" class="col-sm-2 col-form-label">Receipent Address</label>
+        <div class="col-sm-6">
+            <input ngModel type="text" class="form-control" id="inputReceipent" name="receipent">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+
+        <label for="inputReceipent" class="col-sm-2 col-form-label">Campaign Description</label>
+        <textarea ngModel class="form-control col-sm-6" id="inputReceipent" rows="3" name="description"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary" >Submit</button>
+    
+    <!-- <div *ngIf = "err" class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Alert!</h5>
+              <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">{{err}}</div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    
+</form>
+

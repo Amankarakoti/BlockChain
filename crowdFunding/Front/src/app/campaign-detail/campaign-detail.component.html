@@ -1,0 +1,21 @@
+
+
+<div class="background">
+  <div class="card">
+      <ul class = "list">
+        <li ><h5>Description : </h5> {{description}}</li>
+        <li ><h5>Target : </h5> {{target}} </li>
+        <li ><h5>RaisedFund : </h5> {{raisedFund}}</li>
+        <li ><h5>Funding-Deadline/Voting Start time  : </h5>{{fundDeadline}} </li>
+        <li ><h5>Voting-Deadline :</h5> {{voteDeadline}} </li>
+        <li ><h5>Receipent : </h5>{{receipent}} </li>
+        <li> <h5>Minimum Donation :</h5>
+          <span *ngIf="minimumAmount; else alternateTemp">
+           {{minimumAmount}} eth
+          </span>
+          <ng-template #alternateTemp><span > --- </span></ng-template>
+          </li>
+        <li ><h5>Acquired Votes :</h5>{{noOfVoters}} </li>
+      </ul>
+    </div>
+</div>
